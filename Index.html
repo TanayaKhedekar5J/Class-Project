@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <marquee behavior="scroll" direction="right">BIG SALE! 50% ON 2 ITEMS</marquee>
+    <H1>Lisa's Makeup box</H1>
+    <!--Create a container holding the heading,paragraph -->
+    <div class="top container">
+        <h1>Welcome to Lisa's Makeup shop</h1>
+        <p>Makeup is a thing that is always needed for a woman. <br>
+            That's why I have open my shop. For all the womans.
+            Order any make up item <b>You want</b>
+        </p>
+        <div class="table container">
+            <h2>So let's see what is on the house </h2>
+            <!--Iteration 1 Create a table to display the items available in Rita's Makeup box -->
+            <table id="table">
+                <tr>
+                    <th>ITEM</th>
+                    <th>NAME</th>
+                    <th>PRICE</th>
+                    <th>QUANTITY</th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="checkbox"></td>
+                    <td><img src="Lipstick.webp " ></td>
+                    <td>M.A.C LIPSTICK Rs. 4000</td>
+                    <td><input id="quantity" type="number"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="checkbox"></td>
+                    <td><img src="Eye shadow.jpg" ></td>
+                    <td>M.A.C EYESHDOW Rs. 5000</td>
+                    <td><input id="quantity" type="number"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="checkbox"></td>
+                    <td><img src="Blush.jpg" ></td>
+                    <td>M.A.C BLUSH Rs. 3404</td>
+                    <td><input id="quantity" type="number"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="checkbox"></td>
+                    <td><img src="Highlighter.jpg" ></td>
+                    <td>M.A.C Highlighter Rs. 2000</td>
+                    <td><input id="quantity" type="number"></td>
+                </tr>
+            </table>
+            <B>Pls enter your email and mobile no.</B>
+            <input type="text" id="mobile" placeholder="Enter your mobile number"> <br><br>
+            <input type="text" id="Email" placeholder="Enter your email id"><br><br>
+            <div class="button" onclick="buy" id="buy-now"> <b>Buy Now</b> </div>
+        <h3 id="thanks">Thank You For Shopping With Us.</h3>
+        <br><br>
+        <a href="SecondPage.htm"> <div class="button" onclick="submit" id="Submit"></div></a>
+
+        <footer>
+            Made with love Tanaya💖💖
+        </footer>
+        </div>
+    </div>
+    <script>
+        document.getElementById("buy-now").onclick = (evt) => {
+            document.getElementById("thanks").style.display = "inherit";
+            document.getElementById("buy-now").style.display = "none";
+        }
+    </script>
+    
+    
+
+</body>
+</html>
